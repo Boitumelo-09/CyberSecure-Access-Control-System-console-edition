@@ -5,6 +5,9 @@ public class Person {
    private String email;
 
 
+    public Person(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
