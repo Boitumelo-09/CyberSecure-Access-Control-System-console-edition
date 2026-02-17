@@ -29,5 +29,6 @@ public abstract class Employee extends Person{
         this.jobTitle = jobTitle;
     }
 
+    public abstract void accessSystem();
 
 }
