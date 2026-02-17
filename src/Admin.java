@@ -14,6 +14,6 @@ public class Admin extends Employee implements AuthenticationInterface {
 
     @Override
     public void accessSystem() {
-        IO.println("Admin Entering System...");
+        IO.println("Admin " + super.getName()+ ", Entering System...");
     }
 }
