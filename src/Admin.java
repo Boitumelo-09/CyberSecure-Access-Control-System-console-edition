@@ -9,9 +9,8 @@ public class Admin extends Employee implements AuthenticationInterface {
 
     @Override
     public boolean userAuthentication(String userName, String userID) {
-        return false;
+        return super.getName().equals(userName) && super.getEmployeeID().equals(userID);
     }
-
     @Override
     public void accessSystem() {
         IO.println("Admin " + super.getName()+ ", Entering System...");
