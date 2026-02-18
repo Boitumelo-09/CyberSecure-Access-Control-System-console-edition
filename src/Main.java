@@ -1,12 +1,15 @@
 
 void main() {
-    IO.println("Hello Broski...");
 
-    Intern intern = new Intern("Cassias","67548");
-    Admin administrator = new Admin("Marcello Kuna","4532");
-    SecurityAnalyst securityAnalyst = new SecurityAnalyst("Boitumelo","34257");
 
-        intern.accessSystem();
-        administrator.accessSystem();
-        securityAnalyst.accessSystem();
+    Utility tool = new Tool();
+          tool.newLine(4);
+    IO.println("Opening Environment...");
+          tool.newLine(1);
+
+ MainRegistry portal = new MainRegistry();
+       portal.login("Rosabel","3652");
+       portal.login("Kabob Teka","INT345");
+
+    IO.println("Closing Environment...");
 }
