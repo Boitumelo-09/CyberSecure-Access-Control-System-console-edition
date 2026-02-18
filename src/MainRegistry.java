@@ -8,9 +8,18 @@ public class MainRegistry {
         public MainRegistry(){
             registeredEmployees.add(new Admin("Rosabel","3652"));
             registeredEmployees.add(new Intern("Kabob Teka","INT345"));
-            registeredEmployees.add(new SecurityAnalyst("Boitumelo","SOC5643"));
+            registeredEmployees.add(new SecurityAnalyst("Botulinum","SOC5643"));
         }
 
+      public void login(String name, String userID){
+    for(Employee employee : registeredEmployees){
+                if (employee.getName().equals(name)){
+                    employee.accessSystem();
+                }
+
+    }
+
+      }
 
 
     public List<Employee> getRegisteredEmployees() {
