@@ -21,7 +21,7 @@ public class MainRegistry {
                 }
     }
             if (index < 0){
-                throw new Exception("Employee ".concat(name).concat("Not found"));
+                throw new Exception("Employee ".concat(name).concat(" Not found"));
             }
                  registeredEmployees.get(index).accessSystem();
       }
