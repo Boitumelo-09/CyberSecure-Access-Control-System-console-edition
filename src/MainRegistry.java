@@ -12,9 +12,12 @@ public class MainRegistry {
         }
 
       public void login(String name, String userID){
+               int index = -1;
     for(Employee employee : registeredEmployees){
-                if (employee.getName().equals(name)){
+                if (employee.getName().equals(name) && employee.getEmployeeID().equals(userID)){
                     employee.accessSystem();
+                      index = registeredEmployees.indexOf(employee);
+
                 }
 
     }
