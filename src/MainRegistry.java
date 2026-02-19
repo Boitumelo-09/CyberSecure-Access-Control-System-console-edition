@@ -15,13 +15,12 @@ public class MainRegistry {
                int index = -1;
     for(Employee employee : registeredEmployees){
                 if (employee.getName().equals(name) && employee.getEmployeeID().equals(userID)){
-                    employee.accessSystem();
+
                       index = registeredEmployees.indexOf(employee);
 
                 }
-
     }
-
+                 registeredEmployees.get(index).accessSystem();
       }
 
 
