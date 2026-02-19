@@ -11,7 +11,7 @@ public class MainRegistry {
             registeredEmployees.add(new SecurityAnalyst("Botulinum","SOC5643"));
         }
 
-      public void login(String name, String userID){
+      public void login(String name, String userID) throws Exception {
                int index = -1;
     for(Employee employee : registeredEmployees){
                 if (employee.getName().equals(name) && employee.getEmployeeID().equals(userID)){
@@ -20,6 +20,9 @@ public class MainRegistry {
 
                 }
     }
+            if (index < 0){
+                throw new Exception("Employee ".concat(name).concat("Not found"));
+            }
                  registeredEmployees.get(index).accessSystem();
       }
 

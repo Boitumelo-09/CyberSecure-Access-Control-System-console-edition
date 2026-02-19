@@ -1,5 +1,5 @@
 
-void main() {
+void main() throws Exception {
 
 
     Utility tool = new Tool();
@@ -8,8 +8,8 @@ void main() {
           tool.newLine(1);
 
  MainRegistry portal = new MainRegistry();
-       portal.login("Rosabel","3652");
-       portal.login("Kabob Teka","INT345");
+       portal.login("Rosabel","362");
+//       portal.login("Kabob Teka","INT345");
 
     IO.println("Closing Environment...");
 }
