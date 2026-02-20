@@ -16,23 +16,21 @@ public class MainRegistry {
 
     for(Employee employee : registeredEmployees){
                 if (employee.getName().equals(name)){
+
                         if(employee instanceof AuthenticationInterface auTH){
                                  if(auTH.userAuthentication(userID)){
                                             employee.accessSystem();
                                             auTH.userActivity();
+                                            return;
                                  }else{
                                      throw new Exception("Wrong user identification code...");
 
                                  }
-                      }
-                 else{
-                            throw new Exception("Employee ".concat(name).concat(" Not found"));
-
-                        }
-
-
+                     }
                 }
     }
+
+          throw new Exception("Employee ".concat(name).concat(" Not found"));
 
       }
 

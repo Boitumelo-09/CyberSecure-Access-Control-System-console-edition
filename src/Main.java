@@ -10,6 +10,6 @@ void main() throws Exception {
  MainRegistry portal = new MainRegistry();
 
        portal.login("Kabob Teka","INT345");
-       portal.login("Rosabel","362");
+       portal.login("Rosabl","362");
     IO.println("Closing Environment...");
 }
