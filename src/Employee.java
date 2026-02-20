@@ -1,6 +1,6 @@
 
 
-public abstract class Employee extends Person{
+public abstract class Employee extends Person implements AuthenticationInterface{
        private String employeeID;
        private int clearanceLevel;
        private String jobTitle;
