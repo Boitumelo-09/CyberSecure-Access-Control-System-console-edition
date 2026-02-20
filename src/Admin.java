@@ -9,8 +9,14 @@ public class Admin extends Employee implements AuthenticationInterface {
 
     @Override
     public boolean userAuthentication(String password) {
-        return false;
+        return password.equals(getEmployeeID());
     }
+
+    @Override
+    public void userActivity() {
+           IO.println("Administrator now online...");
+    }
+
     @Override
     public void accessSystem() {
         IO.println("Admin " + super.getName()+ ", Entering System...");

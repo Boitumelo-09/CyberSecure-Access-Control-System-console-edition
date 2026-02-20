@@ -10,7 +10,10 @@ public SecurityAnalyst(String name , String employeeID){
 
       return password.equals(getEmployeeID());
 }
-
+    @Override
+    public void userActivity() {
+        IO.println("SOC Analyst now online...");
+    }
     @Override
     public void accessSystem() {
     IO.println("Security Analyst : " + super.getName() + ",Accessing System...");

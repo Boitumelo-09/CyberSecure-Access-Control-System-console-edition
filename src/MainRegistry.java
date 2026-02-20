@@ -13,22 +13,27 @@ public class MainRegistry {
 
       public void login(String name, String userID) throws Exception {
 
-               int index = -1;
+
     for(Employee employee : registeredEmployees){
-                if (employee.getName().equals(name) && employee.getEmployeeID().equals(userID)){
-                      if(employee instanceof AuthenticationInterface auTH){
+                if (employee.getName().equals(name)){
+                        if(employee instanceof AuthenticationInterface auTH){
                                  if(auTH.userAuthentication(userID)){
-                                       employee.accessSystem();
+                                            employee.accessSystem();
+                                            auTH.userActivity();
+                                 }else{
+                                     throw new Exception("Wrong user identification code...");
+
                                  }
                       }
-                      index = registeredEmployees.indexOf(employee);
+                 else{
+                            throw new Exception("Employee ".concat(name).concat(" Not found"));
+
+                        }
+
 
                 }
     }
-            if (index < 0){
-                throw new Exception("Employee ".concat(name).concat(" Not found"));
-            }
-                 registeredEmployees.get(index).accessSystem();
+
       }
 
 
