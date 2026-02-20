@@ -8,7 +8,7 @@ public SecurityAnalyst(String name , String employeeID){
     @Override
     public boolean userAuthentication(String password) {
 
-      return false;
+      return password.equals(getEmployeeID());
 }
 
     @Override
