@@ -12,10 +12,13 @@ public class MainRegistry {
         }
 
       public void login(String name, String userID) throws Exception {
+
                int index = -1;
     for(Employee employee : registeredEmployees){
                 if (employee.getName().equals(name) && employee.getEmployeeID().equals(userID)){
+                      if(employee instanceof AuthenticationInterface auTH){
 
+                      }
                       index = registeredEmployees.indexOf(employee);
 
                 }

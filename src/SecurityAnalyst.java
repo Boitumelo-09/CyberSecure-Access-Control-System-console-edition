@@ -6,9 +6,10 @@ public SecurityAnalyst(String name , String employeeID){
 
 
     @Override
-    public boolean userAuthentication(String userName, String userID) {
-        return super.getName().equals(userName) && super.getEmployeeID().equals(userID);
-    }
+    public boolean userAuthentication(String password) {
+
+      return false;
+}
 
     @Override
     public void accessSystem() {
