@@ -11,6 +11,6 @@ public class Intern extends Employee implements AuthenticationInterface{
 
     @Override
     public boolean userAuthentication(String password) {
-return false;
+        return password.equals(getEmployeeID());
     }
 }

@@ -17,7 +17,9 @@ public class MainRegistry {
     for(Employee employee : registeredEmployees){
                 if (employee.getName().equals(name) && employee.getEmployeeID().equals(userID)){
                       if(employee instanceof AuthenticationInterface auTH){
-
+                                 if(auTH.userAuthentication(userID)){
+                                       employee.accessSystem();
+                                 }
                       }
                       index = registeredEmployees.indexOf(employee);
 
