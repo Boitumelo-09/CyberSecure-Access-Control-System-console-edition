@@ -8,7 +8,7 @@ void main() throws Exception {
 
        portal.login("Kabob Teka","INT345");
        portal.login("Rosabel","3652");
-       portal.login("Botuli","SOC5643");
+       portal.login("Botulinum","SOC5643");
 
 
     IO.println("Closing Environment...");
