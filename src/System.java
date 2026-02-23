@@ -1,5 +1,12 @@
-public interface System {
+public class System {
 
-    void run();
+
+
+    void run(){
+        MainRegistry portal = new MainRegistry();
+
+    }
+
+
 
 }

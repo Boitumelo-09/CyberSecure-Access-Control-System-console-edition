@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainRegistry implements System{
+public class MainRegistry {
 
     private List<Employee> registeredEmployees = new ArrayList<>();
 
@@ -41,8 +41,5 @@ public class MainRegistry implements System{
         this.registeredEmployees = registeredEmployees;
     }
 
-    @Override
-    public void run() {
 
-    }
 }
