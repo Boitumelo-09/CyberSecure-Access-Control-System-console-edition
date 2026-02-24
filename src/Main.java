@@ -1,14 +1,11 @@
 
 void main() throws Exception {
 
-    IO.println("Opening Environment...");
 
 
- MainRegistry portal = new MainRegistry();
 
-       portal.login("Kabob Teka","INT345");
-       portal.login("Rosabel","3652");
-       portal.login("Botulinum","SOC5643");
+ System system = new System();
+ system.run();
 
 
     IO.println("Closing Environment...");
