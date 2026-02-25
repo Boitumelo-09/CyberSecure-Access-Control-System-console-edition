@@ -1,4 +1,6 @@
+import java.util.*;
 public class System {
+
 
 
 
@@ -11,6 +13,8 @@ public class System {
           IO.print("Name : "); userName = IO.readln();
           IO.print("Identification : "); userID = IO.readln();
          portal.login(userName,userID);
+        IO.println("CLosing SySTEM");
+
     }
 
 
