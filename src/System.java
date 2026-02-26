@@ -5,11 +5,14 @@ public class System {
 
 
     void run() throws  Exception {
+   while(true) {
+       system();
+   }
 
-      system();
     }
 
     void system() throws Exception{
+
         MainRegistry portal = new MainRegistry();
         String userName , userID;
         Tool tool = new Tool() ;
@@ -18,7 +21,8 @@ public class System {
         IO.print("User Name : "); userName = IO.readln();
         IO.print("User ID   : "); userID = IO.readln();
         portal.login(userName,userID);
-        IO.println("CLosing SySTEM");
+        IO.println("Closing Environment...");
+
 
     }
 
