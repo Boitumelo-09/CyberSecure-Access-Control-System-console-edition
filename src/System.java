@@ -10,8 +10,8 @@ public class System {
         Tool tool = new Tool() ;
           IO.println("Hey -- Welcome let's sign you in!");
           tool.newLine(2);
-          IO.print("Name : "); userName = IO.readln();
-          IO.print("Identification : "); userID = IO.readln();
+          IO.print("User Name : "); userName = IO.readln();
+          IO.print("User ID   : "); userID = IO.readln();
          portal.login(userName,userID);
         IO.println("CLosing SySTEM");
 
