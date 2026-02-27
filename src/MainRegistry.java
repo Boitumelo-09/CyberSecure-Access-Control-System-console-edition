@@ -9,6 +9,7 @@ public class MainRegistry {
             registeredEmployees.add(new Admin("Rosabel","3652"));
             registeredEmployees.add(new Intern("Kabob Teka","INT345"));
             registeredEmployees.add(new SecurityAnalyst("Botulinum","SOC5643"));
+            registeredEmployees.add(new Intern("Bushing","2286"));
         }
 
       public void login(String name, String userID) throws Exception {
