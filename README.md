@@ -20,6 +20,7 @@ roles, authentication, and structured architecture.
 -   **Encapsulation**
 -   **Separation of Concerns**
 -   **Controller Pattern**
+-   **Facade Software Deasign Pattern**
 -   **Basic Cybersecurity Principles (Authentication & Authorization)**
 
 ------------------------------------------------------------------------
