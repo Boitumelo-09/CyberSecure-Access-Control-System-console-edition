@@ -18,6 +18,11 @@ public class Admin extends Employee implements AuthenticationInterface {
     }
 
     @Override
+    public void greetingColleagues() {
+        IO.println("Hello i am , Admin ".concat(getName()));
+    }
+
+    @Override
     public void accessSystem() {
         IO.println("Admin " + super.getName()+ ", Entering System...");
     }

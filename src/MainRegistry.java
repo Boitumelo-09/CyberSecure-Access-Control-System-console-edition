@@ -10,6 +10,7 @@ public class MainRegistry {
             registeredEmployees.add(new Intern("Kabob Teka","INT345"));
             registeredEmployees.add(new SecurityAnalyst("Botulinum","SOC5643"));
             registeredEmployees.add(new Intern("Bushing","2286"));
+            registeredEmployees.add(new Intern("Marisha","2324"));
         }
 
       public void login(String name, String userID) throws Exception {
@@ -20,6 +21,7 @@ public class MainRegistry {
 
                           if(employee.userAuthentication(userID)){
                                             employee.accessSystem();
+                                            employee.greetingColleagues();
                                             employee.userActivity();
                                             return;
                                  }else{

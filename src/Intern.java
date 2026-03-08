@@ -12,6 +12,14 @@ public class Intern extends Employee implements AuthenticationInterface{
     public void userActivity() {
         IO.println("Intern now working online...");
     }
+
+    @Override
+    public void greetingColleagues() {
+
+            IO.println("Hello i am , Intern ".concat(getName()));
+
+    }
+
     @Override
     public boolean userAuthentication(String password) {
         return password.equals(getEmployeeID());

@@ -14,6 +14,14 @@ public SecurityAnalyst(String name , String employeeID){
     public void userActivity() {
         IO.println("SOC Analyst now online...");
     }
+
+    @Override
+    public void greetingColleagues() {
+
+            IO.println("Hello i am , Security Analyst ".concat(getName()));
+
+    }
+
     @Override
     public void accessSystem() {
     IO.println("Security Analyst : " + super.getName() + ",Accessing System...");
